@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Story Mood Playlist</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>✨ Story Mood Playlist</h1>
+      <p class="subtitle">Discover music that matches your reading mood</p>
+    </header>
+
+    <div class="auth-section">
+      <button id="spotify-auth" class="auth-button">
+        <span class="button-icon">🔌</span>
+        <span class="button-text">Connect to Spotify</span>
+      </button>
+    </div>
+
+    <div class="filters-section">
+      <div class="filter-group">
+        <label for="genre-select">Music Genre</label>
+        <select id="genre-select" class="filter-select">
+          <option value="">Any Genre</option>
+          <option value="pop">Pop</option>
+          <option value="rock">Rock</option>
+          <option value="hiphop">Hip Hop</option>
+          <option value="electronic">Electronic</option>
+          <option value="kpop">K-Pop</option>
+          <option value="lofi">Lo-fi</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="language-select">Language</label>
+        <select id="language-select" class="filter-select">
+          <option value="">Any Language</option>
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="hindi">Hindi</option>
+          <option value="korean">Korean</option>
+        </select>
+      </div>
+    </div>
+
+    <button id="analyze-btn" class="analyze-button">
+      <span class="button-icon">🔍</span>
+      <span class="button-text">Analyze Page & Get Playlist</span>
+    </button>
+
+    <div id="playlist-section" class="playlist-section">
+      <div class="placeholder">
+        <div class="placeholder-icon">🎵</div>
+        <p>No playlist yet. Click "Analyze Page" to get recommendations.</p>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
